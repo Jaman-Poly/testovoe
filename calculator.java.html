@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>calculator.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+.s4 { color: #2aacb8;}
+.s5 { color: #7a7e85;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+calculator.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">util</span><span class="s2">.</span><span class="s1">HashMap</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">util</span><span class="s2">.</span><span class="s1">Map</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">util</span><span class="s2">.</span><span class="s1">Scanner</span><span class="s2">;</span>
+
+<span class="s0">class </span><span class="s1">Main </span><span class="s2">{</span>
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+        <span class="s1">Map</span><span class="s2">&lt;</span><span class="s1">String</span><span class="s2">, </span><span class="s1">Integer</span><span class="s2">&gt; </span><span class="s1">number </span><span class="s2">= </span><span class="s0">new </span><span class="s1">HashMap</span><span class="s2">&lt;&gt;();</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;I&quot;</span><span class="s2">, </span><span class="s4">1</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;II&quot;</span><span class="s2">, </span><span class="s4">2</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;III&quot;</span><span class="s2">, </span><span class="s4">3</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;IV&quot;</span><span class="s2">, </span><span class="s4">4</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;V&quot;</span><span class="s2">, </span><span class="s4">5</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;VI&quot;</span><span class="s2">, </span><span class="s4">6</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;VII&quot;</span><span class="s2">, </span><span class="s4">7</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;VIII&quot;</span><span class="s2">, </span><span class="s4">8</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;IX&quot;</span><span class="s2">, </span><span class="s4">9</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;X&quot;</span><span class="s2">, </span><span class="s4">10</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;XII&quot;</span><span class="s2">, </span><span class="s4">12</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;XIV&quot;</span><span class="s2">, </span><span class="s4">14</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;XVI&quot;</span><span class="s2">, </span><span class="s4">16</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;XVII&quot;</span><span class="s2">, </span><span class="s4">18</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;XX&quot;</span><span class="s2">, </span><span class="s4">20</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;XV&quot;</span><span class="s2">, </span><span class="s4">15</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;XXI&quot;</span><span class="s2">, </span><span class="s4">21</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;XXIV&quot;</span><span class="s2">, </span><span class="s4">24</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;XXVII&quot;</span><span class="s2">, </span><span class="s4">27</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;XXX&quot;</span><span class="s2">, </span><span class="s4">30</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;XXVIII&quot;</span><span class="s2">, </span><span class="s4">28</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;XXXII&quot;</span><span class="s2">, </span><span class="s4">32</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;XXXVI&quot;</span><span class="s2">, </span><span class="s4">36</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;XL&quot;</span><span class="s2">, </span><span class="s4">40</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;XXV&quot;</span><span class="s2">, </span><span class="s4">25</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;XXXV&quot;</span><span class="s2">, </span><span class="s4">35</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;XLV&quot;</span><span class="s2">, </span><span class="s4">45</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;L&quot;</span><span class="s2">, </span><span class="s4">50</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;XLII&quot;</span><span class="s2">, </span><span class="s4">42</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;XLVIII&quot;</span><span class="s2">, </span><span class="s4">48</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;LIV&quot;</span><span class="s2">, </span><span class="s4">54</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;LX&quot;</span><span class="s2">, </span><span class="s4">60</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;XLIX&quot;</span><span class="s2">, </span><span class="s4">49</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;LVI&quot;</span><span class="s2">, </span><span class="s4">56</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;LXIII&quot;</span><span class="s2">, </span><span class="s4">63</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;LXX&quot;</span><span class="s2">, </span><span class="s4">70</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;LXIV&quot;</span><span class="s2">, </span><span class="s4">64</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;LXXII&quot;</span><span class="s2">, </span><span class="s4">72</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;LXXX&quot;</span><span class="s2">, </span><span class="s4">80</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;LXXXI&quot;</span><span class="s2">, </span><span class="s4">81</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;XC&quot;</span><span class="s2">, </span><span class="s4">90</span><span class="s2">);</span>
+        <span class="s1">number</span><span class="s2">.</span><span class="s1">put</span><span class="s2">(</span><span class="s3">&quot;C&quot;</span><span class="s2">, </span><span class="s4">100</span><span class="s2">);</span>
+
+        <span class="s1">Scanner kk </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+        <span class="s1">String rq </span><span class="s2">= </span><span class="s1">kk</span><span class="s2">.</span><span class="s1">nextLine</span><span class="s2">();</span>
+        <span class="s1">String</span><span class="s2">[] </span><span class="s1">words </span><span class="s2">= </span><span class="s1">rq</span><span class="s2">.</span><span class="s1">split</span><span class="s2">(</span><span class="s3">&quot; &quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">a2 </span><span class="s2">= </span><span class="s4">0</span><span class="s2">;</span>
+        <span class="s0">int </span><span class="s1">b2 </span><span class="s2">= </span><span class="s4">0</span><span class="s2">;</span>
+        <span class="s0">if </span><span class="s2">((</span><span class="s1">number</span><span class="s2">.</span><span class="s1">containsKey</span><span class="s2">(</span><span class="s1">words</span><span class="s2">[</span><span class="s4">0</span><span class="s2">])) &amp;&amp; (</span><span class="s1">number</span><span class="s2">.</span><span class="s1">containsKey</span><span class="s2">(</span><span class="s1">words</span><span class="s2">[</span><span class="s4">2</span><span class="s2">]))) {</span>
+            <span class="s1">a2 </span><span class="s2">= </span><span class="s1">number</span><span class="s2">.</span><span class="s1">get</span><span class="s2">(</span><span class="s1">words</span><span class="s2">[</span><span class="s4">0</span><span class="s2">]);</span>
+            <span class="s1">b2 </span><span class="s2">= </span><span class="s1">number</span><span class="s2">.</span><span class="s1">get</span><span class="s2">(</span><span class="s1">words</span><span class="s2">[</span><span class="s4">2</span><span class="s2">]);</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">a2 </span><span class="s2">+ </span><span class="s3">&quot; &quot; </span><span class="s2">+ </span><span class="s1">b2</span><span class="s2">);</span>
+            <span class="s0">int </span><span class="s1">s1 </span><span class="s2">= </span><span class="s4">0</span><span class="s2">;</span>
+            <span class="s0">if </span><span class="s2">((</span><span class="s4">0 </span><span class="s2">&lt; </span><span class="s1">a2</span><span class="s2">) &amp; (</span><span class="s1">a2 </span><span class="s2">&lt; </span><span class="s4">11</span><span class="s2">) &amp; (</span><span class="s4">0 </span><span class="s2">&lt; </span><span class="s1">b2</span><span class="s2">) &amp; (</span><span class="s1">b2 </span><span class="s2">&lt; </span><span class="s4">11</span><span class="s2">)) {</span>
+                <span class="s0">switch </span><span class="s2">(</span><span class="s1">words</span><span class="s2">[</span><span class="s4">1</span><span class="s2">]) {</span>
+                    <span class="s0">case </span><span class="s2">(</span><span class="s3">&quot;+&quot;</span><span class="s2">):</span>
+                        <span class="s1">s1 </span><span class="s2">= </span><span class="s1">a2 </span><span class="s2">+ </span><span class="s1">b2</span><span class="s2">;</span>
+                        <span class="s0">break</span><span class="s2">;</span>
+                    <span class="s0">case </span><span class="s2">(</span><span class="s3">&quot;-&quot;</span><span class="s2">):</span>
+                        <span class="s1">s1 </span><span class="s2">= </span><span class="s1">a2 </span><span class="s2">- </span><span class="s1">b2</span><span class="s2">;</span>
+                        <span class="s0">break</span><span class="s2">;</span>
+                    <span class="s0">case </span><span class="s2">(</span><span class="s3">&quot;*&quot;</span><span class="s2">):</span>
+                        <span class="s1">s1 </span><span class="s2">= </span><span class="s1">a2 </span><span class="s2">* </span><span class="s1">b2</span><span class="s2">;</span>
+                        <span class="s0">break</span><span class="s2">;</span>
+                    <span class="s0">case </span><span class="s2">(</span><span class="s3">&quot;/&quot;</span><span class="s2">):</span>
+                        <span class="s1">s1 </span><span class="s2">= </span><span class="s1">a2 </span><span class="s2">/ </span><span class="s1">b2</span><span class="s2">; </span><span class="s5">// доделать округление</span>
+                        <span class="s0">break</span><span class="s2">;</span>
+                    <span class="s0">default</span><span class="s2">:</span>
+                        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;throws Exception&quot;</span><span class="s2">);</span>
+                <span class="s2">}</span>
+            <span class="s2">}</span>
+            <span class="s5">// int ans = number.get(s1);</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">s1</span><span class="s2">);</span>
+        <span class="s2">}</span>
+    <span class="s2">}</span>
+<span class="s2">}</span></pre>
+</body>
+</html>
