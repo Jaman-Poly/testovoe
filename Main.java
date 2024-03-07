@@ -55,7 +55,7 @@ class Main {
         String[] words = inLine.split(" ");
 
         if (words.length > 3) {
-            throw new Exception("жопа");
+            throw new Exception("Неверная длина. Допустимо только 2 числа");
         } else {
             int a2 = 0;
             int b2 = 0;
@@ -78,7 +78,7 @@ class Main {
                             s1 = Math.round(a2 / b2);
                             break;
                         default:
-                            System.out.println("throws Exception");
+                            throw new Exception("Неверный символ");
                     }
                 }
                 int finalS = s1;
@@ -96,7 +96,7 @@ class Main {
                     a1 = Integer.parseInt(words[0]);
                     b1 = Integer.parseInt(words[2]);
                 } catch (Exception e) {
-                    System.out.println("throws Exception");
+                    throw new Exception("Неверный символ");
                 }
                 if ((0 < a1) & (a1 < 11) & (0 < b1) & (b1 < 11)) {
                     switch (words[1]) {
@@ -114,11 +114,10 @@ class Main {
                             System.out.println(s2);
                             break;
                         default:
-                            System.out.println("throws Exception");
-                            break;
+                            throw new Exception("Неверный символ");
                     }
                 } else {
-                    System.out.println("throws Exception");
+                    throw new Exception("Неверный символ");
                 }
             }
         }
